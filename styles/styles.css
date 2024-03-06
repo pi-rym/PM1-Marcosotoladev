@@ -102,22 +102,28 @@ body {
 }
 
 .container-form {
-    max-width: 500px;
-    margin: 0 auto;
+    margin: 5rem;
     padding: 20px;
     background-color: #fff;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #50727b;
+}
+
+.form {
+    padding: 3rem;
+    text-align: center;
 }
 
 .form-group {
     margin-bottom: 20px;
 }
 
-label {
-    font-weight: bold;
-    display: block;
-    margin-bottom: 5px;
+.title-form {
+    color: #93b39c;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 1rem;
 }
 
 input[type="text"],
@@ -135,17 +141,16 @@ textarea {
 }
 
 button {
-    display: block;
-    width: 100%;
+    width: 30%;
     padding: 10px;
-    background-color: #007bff;
+    background-color: #35374b;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #93b39c;
 }
