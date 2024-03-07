@@ -53,24 +53,95 @@
             </div>
         </div>
     </section>
-    <aside>
+    <section>
         <div class="container-form">
             <h2 class="title-form">Actividades Favoritas</h2>
-            <form action="#" method="post" class="form">
+            <form id="formulario" action="#" method="post" class="form">
                 <div class="form-group">
                     <input type="text" id="actividad" name="actividad" placeholder="Nombre de la Actividad" required>
                 </div>
                 <div class="form-group">
-                    <textarea id="descripcion" name="descripcion" rows="4" placeholder="Descripción de la Actividad" required></textarea>
+                    <textarea id="descripcion" name="descripcion" rows="4" placeholder="Descripción de la Actividad"
+                        required></textarea>
                 </div>
                 <div class="form-group">
-                    <input type="url" id="urlImagen" name="urlImagen" placeholder="Url de la Imagen" required>
+                    <input type="url" id="url" name="url" placeholder="Url de la Imagen" required>
                 </div>
-                <button type="submit">Agregar Actividad</button>
+
+                <button type="submit"> <span>Agregar Actividad</span>
+                </button>
             </form>
         </div>
-    </aside>
+    </section>
+    <section>
+        <div id="contenedor" class="cards"></div>
+    </section>
+    
+    <script>
+        class Datos {
+            constructor(actividad, descripcion, url) {
+                this.actividad = actividad;
+                this.descripcion = descripcion;
+                this.url = url;
+            }
+        }
 
+
+        document.addEventListener("DOMContentLoaded", function() {
+    // Cargar las cards almacenadas en localStorage cuando se cargue la página
+    const storedCards = JSON.parse(localStorage.getItem("cards")) || [];
+    storedCards.forEach(card => {
+        mostrarProyecto(card);
+    });
+
+    document.getElementById("formulario").addEventListener("submit", function (event) {
+        event.preventDefault();
+        const actividad = document.getElementById("actividad").value;
+        const descripcion = document.getElementById("descripcion").value;
+        const url = document.getElementById("url").value;
+
+        const nuevoProyecto = new Datos(actividad, descripcion, url);
+        mostrarProyecto(nuevoProyecto);
+
+        // Guardar la nueva card en localStorage
+        const storedCards = JSON.parse(localStorage.getItem("cards")) || [];
+        storedCards.push(nuevoProyecto);
+        localStorage.setItem("cards", JSON.stringify(storedCards));
+
+        // Limpiar campos del formulario después de enviar
+        limpiarCampos();
+    });
+
+    function mostrarProyecto(proyecto) {
+        const contenedor = document.getElementById("contenedor");
+
+        const card = document.createElement("div");
+        card.classList.add("card");
+
+        const titulo = document.createElement("h3");
+        titulo.textContent = proyecto.actividad;
+        card.appendChild(titulo);
+
+        const imagen = document.createElement("img");
+        imagen.src = proyecto.url;
+        card.appendChild(imagen);
+
+        const descripcion = document.createElement("p");
+        descripcion.textContent = proyecto.descripcion;
+        card.appendChild(descripcion);
+
+        contenedor.appendChild(card);
+    }
+
+    function limpiarCampos() {
+        document.getElementById("actividad").value = "";
+        document.getElementById("descripcion").value = "";
+        document.getElementById("url").value = "";
+    }
+});
+
+    </script>
+    
 </body>
 
 </html>

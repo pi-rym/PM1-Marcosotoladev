@@ -102,6 +102,21 @@ body {
 
 }
 
+.card p {
+    color: white;
+    margin-bottom: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: medium;
+    padding: 1rem;
+}
+
+.card h3 {
+    color: #93b39c;
+    text-align: center;
+    padding: 1rem;
+}
+
 .container-form {
     margin: 5rem;
     padding: 20px;
@@ -142,16 +157,53 @@ textarea {
 }
 
 button {
-    width: 30%;
-    padding: 10px;
-    background-color: #35374b;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
+    outline: none;
     cursor: pointer;
+    border: none;
+    padding: 0.9rem 2rem;
+    margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: inherit;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 17px;
+    border-radius: 500px;
+    overflow: hidden;
+    background: #93b39c;
+    color: ghostwhite;
 }
 
-button:hover {
-    background-color: #93b39c;
+button span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+}
+
+button:hover span {
+    color: #35374b;
+}
+
+button::before,
+button::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+button::before {
+    content: "";
+    background: #35374b;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+button:hover::before {
+    transform: translate3d(100%, 0, 0);
 }
