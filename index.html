@@ -168,6 +168,11 @@
                 const card = document.createElement("div");
                 card.classList.add("card");
 
+                // Add click event listener to the card
+                card.addEventListener('click', function () {
+                    this.remove(); 
+                });
+
                 const titulo = document.createElement("h3");
                 titulo.textContent = proyecto.actividad;
                 card.appendChild(titulo);
