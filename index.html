@@ -12,73 +12,123 @@
 </head>
 
 <body>
-    <h1 class="title">Marco Sotola</h1>
+    <header>
+        <h1 class="title">Marco Sotola</h1>
+    </header>
 
-    <article class="about-me">
+    <main>
         <h2 class="title-about-me">Sobre Mi</h2>
-        <p>¡Hola, bienvenido! te cuento que soy residente de la hermosa y serrana Córdoba de Argentina. Soy un
-            apasionado del desarrollo web con 43 años de edad. Decidí emprender este camino para explorar mi creatividad
-            y contribuir al mundo digital. Me encanta experimentar con nuevas tecnologías y aprender de cada desafío que
-            enfrento. Fuera del mundo del desarrollo, disfruto pasar tiempo al aire libre con mi familia y mantenerme al
-            día con las últimas tendencias tecnológicas. ¡Gracias por visitar mi página y ser parte de mi viaje de
-            aprendizaje!
-        </p>
-    </article>
-
-    <h1 class="title-cards">Tecnologías Favoritas</h1>
-    <section class="cards">
-
-        <div class="card">
-            <h2 class="title-card">HTML</h2>
-            <img src="./assets/html.png" alt="logo html">
-            <div class="card-content">
-
-                <p>Infancia, donde se forman las bases de la personalidad y los valores</p>
+        <div class="about">
+            <div class="about-content">
+                <div class="about-me">
+                    <p>¡Hola, bienvenid@! te cuento que soy residente de la hermosa y serrana
+                        Córdoba de Argentina. Soy un
+                        apasionado del desarrollo web con 43 años de edad. Decidí emprender este camino para explorar mi
+                        creatividad
+                        y contribuir al mundo digital. Me encanta experimentar con nuevas tecnologías y aprender de cada
+                        desafío
+                        que
+                        enfrento. Fuera del mundo del desarrollo, disfruto pasar tiempo al aire libre con mi familia y
+                        mantenerme al
+                        día con las últimas tendencias tecnológicas. ¡Gracias por visitar mi página y ser parte de mi
+                        viaje
+                        de
+                        aprendizaje!</p>
+                </div>
             </div>
         </div>
-        <div class="card">
-            <h2 class="title-card">CSS</h2>
-            <img src="./assets/css.png" alt="logo css">
-            <div class="card-content">
 
-                <p>Adolescencia y Juventud, donde se fomentan las experiencias y emociones</p>
+        <h2 class="title-cards">Tecnologías Favoritas</h2>
+
+        <section class="favorite-tec">
+            <div class="card-tec">
+                <div class="content">
+                    <div class="back">
+                        <div class="back-content">
+                            <img src="./assets/html.png" alt="logo html">
+                            <strong>HTML</strong>
+                        </div>
+                    </div>
+                    <div class="front">
+
+                        <div class="description">
+                            <p>Al igual que la infancia, HTML es la base fundamental de una página web. Define la
+                                estructura y el contenido básico, como los huesos y órganos de un cuerpo se
+                                caracterizada por la sencillez y la inocencia</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <h2 class="title-card">Java Script</h2>
-            <img src="./assets/js.png" alt="logo Java Script">
-            <div class="card-content">
 
-                <p>Adultez, donde los valores y las experiencias convergen en la responsabilidad</p>
+            <div class="card-tec">
+                <div class="content">
+                    <div class="back">
+                        <div class="back-content">
+                            <img src="./assets/css.png" alt="logo css">
+                            <strong>CSS</strong>
+                        </div>
+                    </div>
+                    <div class="front">
+
+                        <div class="description">
+                            La juventud es una etapa de exploración y expresión personal. CSS permite dar estilo a
+                            una página web, como la ropa y el peinado que expresan la personalidad de una persona.
+                        </div>
+
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
-    <section>
-        <div class="container-form">
-            <h2 class="title-form">Actividades Favoritas</h2>
-            <form id="formulario" action="#" method="post" class="form">
-                <div class="form-group">
-                    <input type="text" id="actividad" name="actividad" placeholder="Nombre de la Actividad" required>
-                </div>
-                <div class="form-group">
-                    <textarea id="descripcion" name="descripcion" rows="4" placeholder="Descripción de la Actividad"
-                        required></textarea>
-                </div>
-                <div class="form-group">
-                    <input type="url" id="url" name="url" placeholder="Url de la Imagen" required>
-                </div>
 
-                <button type="submit"> <span>Agregar Actividad</span>
-                </button>
-            </form>
-        </div>
-    </section>
-    <section>
-        <div id="contenedor" class="cards"></div>
-    </section>
-    
+            <div class="card-tec">
+                <div class="content">
+                    <div class="back">
+                        <div class="back-content">
+                            <img src="./assets/js.png" alt="logo js">
+                            <strong>JS</strong>
+                        </div>
+                    </div>
+                    <div class="front">
+                        <div class="description">
+                            La adultez implica responsabilidades y decisiones importantes. JavaScript permite añadir
+                            funcionalidades interactivas a una página web, como la capacidad de realizar compras o
+                            enviar formularios.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        </section>
+        <h2 class="title-form">Actividades Favoritas</h2>
+        <section>
+            <div class="container-form">
+                <form id="formulario" action="#" method="post" class="form">
+                    <div class="form-group">
+                        <input type="text" id="actividad" name="actividad" placeholder="Nombre de la Actividad"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="descripcion" name="descripcion" rows="4" placeholder="Descripción de la Actividad"
+                            required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="url" id="url" name="url" placeholder="Url de la Imagen" required>
+                    </div>
+                    <button type="submit"> <span>Agregar Actividad</span>
+                    </button>
+                </form>
+            </div>
+        </section>
+
+
+        <section>
+            <div id="contenedor" class="cards"></div>
+        </section>
+
+    </main>
+
     <script>
-        class Datos {
+        class Activity {
             constructor(actividad, descripcion, url) {
                 this.actividad = actividad;
                 this.descripcion = descripcion;
@@ -87,61 +137,61 @@
         }
 
 
-        document.addEventListener("DOMContentLoaded", function() {
-    // Cargar las cards almacenadas en localStorage cuando se cargue la página
-    const storedCards = JSON.parse(localStorage.getItem("cards")) || [];
-    storedCards.forEach(card => {
-        mostrarProyecto(card);
-    });
+        document.addEventListener("DOMContentLoaded", function () {
+            // Cargar las cards almacenadas en localStorage cuando se cargue la página
+            const storedCards = JSON.parse(localStorage.getItem("cards")) || [];
+            storedCards.forEach(card => {
+                mostrarProyecto(card);
+            });
 
-    document.getElementById("formulario").addEventListener("submit", function (event) {
-        event.preventDefault();
-        const actividad = document.getElementById("actividad").value;
-        const descripcion = document.getElementById("descripcion").value;
-        const url = document.getElementById("url").value;
+            document.getElementById("formulario").addEventListener("submit", function (event) {
+                event.preventDefault();
+                const actividad = document.getElementById("actividad").value;
+                const descripcion = document.getElementById("descripcion").value;
+                const url = document.getElementById("url").value;
 
-        const nuevoProyecto = new Datos(actividad, descripcion, url);
-        mostrarProyecto(nuevoProyecto);
+                const nuevoProyecto = new Activity(actividad, descripcion, url);
+                mostrarProyecto(nuevoProyecto);
 
-        // Guardar la nueva card en localStorage
-        const storedCards = JSON.parse(localStorage.getItem("cards")) || [];
-        storedCards.push(nuevoProyecto);
-        localStorage.setItem("cards", JSON.stringify(storedCards));
+                // Guardar la nueva card en localStorage
+                const storedCards = JSON.parse(localStorage.getItem("cards")) || [];
+                storedCards.push(nuevoProyecto);
+                localStorage.setItem("cards", JSON.stringify(storedCards));
 
-        // Limpiar campos del formulario después de enviar
-        limpiarCampos();
-    });
+                // Limpiar campos del formulario después de enviar
+                limpiarCampos();
+            });
 
-    function mostrarProyecto(proyecto) {
-        const contenedor = document.getElementById("contenedor");
+            function mostrarProyecto(proyecto) {
+                const contenedor = document.getElementById("contenedor");
 
-        const card = document.createElement("div");
-        card.classList.add("card");
+                const card = document.createElement("div");
+                card.classList.add("card");
 
-        const titulo = document.createElement("h3");
-        titulo.textContent = proyecto.actividad;
-        card.appendChild(titulo);
+                const titulo = document.createElement("h3");
+                titulo.textContent = proyecto.actividad;
+                card.appendChild(titulo);
 
-        const imagen = document.createElement("img");
-        imagen.src = proyecto.url;
-        card.appendChild(imagen);
+                const imagen = document.createElement("img");
+                imagen.src = proyecto.url;
+                card.appendChild(imagen);
 
-        const descripcion = document.createElement("p");
-        descripcion.textContent = proyecto.descripcion;
-        card.appendChild(descripcion);
+                const descripcion = document.createElement("p");
+                descripcion.textContent = proyecto.descripcion;
+                card.appendChild(descripcion);
 
-        contenedor.appendChild(card);
-    }
+                contenedor.appendChild(card);
+            }
 
-    function limpiarCampos() {
-        document.getElementById("actividad").value = "";
-        document.getElementById("descripcion").value = "";
-        document.getElementById("url").value = "";
-    }
-});
+            function limpiarCampos() {
+                document.getElementById("actividad").value = "";
+                document.getElementById("descripcion").value = "";
+                document.getElementById("url").value = "";
+            }
+        });
 
     </script>
-    
+
 </body>
 
 </html>
