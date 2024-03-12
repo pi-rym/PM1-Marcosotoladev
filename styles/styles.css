@@ -1,7 +1,9 @@
+/* Estilos generales del cuerpo de la página */
 body {
     background-color: #35374b;
 }
 
+/* Estilos del título principal */
 .title {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 2.5rem;
@@ -13,12 +15,12 @@ body {
     text-shadow: 0 0 20px #FFFF00;
 }
 
-.title:hover{
+/* Efecto de rotación al pasar el ratón sobre el título principal */
+.title:hover {
     transform: rotate(5deg);
 }
 
-
-
+/* Estilos del título de la sección "Sobre Mi" */
 .title-about-me {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-left: 10rem;
@@ -29,25 +31,26 @@ body {
     transform: rotate(-5deg);
 }
 
+/* Animación para el título de la sección "Sobre Mi" */
 @keyframes aparecer {
     0% {
         top: -150px;
         opacity: 0;
     }
-
     100% {
         top: 0px;
         opacity: 1;
     }
 }
 
-
+/* Estilos de la sección "Sobre Mi" */
 .about {
     display: flex;
     justify-content: center;
     margin-top: 5rem;
 }
 
+/* Estilos del contenido de la sección "Sobre Mi" */
 .about-content {
     width:80vw;
     height: 25vh;
@@ -56,6 +59,7 @@ body {
     transition: all .3s;
 }
 
+/* Estilos del contenedor del texto "Sobre Mi" */
 .about-me {
     width: 80vw;
     height: 25vh;
@@ -65,28 +69,28 @@ body {
     transition: all .2s;
 }
 
+/* Estilos del texto dentro del contenedor "Sobre Mi" */
 .about-me p {
     color: #93b39c;
     padding: 1rem;
-font-size: medium;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-line-height: 1.3;
-text-align: center;
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.3;
+    text-align: center;
 }
 
+/* Efecto de escala al pasar el ratón sobre el contenido "Sobre Mi" */
 .about-me:hover {
     transform: scale(0.99);
     border-radius: 20px;
 }
 
+/* Efecto de sombra al pasar el ratón sobre el contenido "Sobre Mi" */
 .about-content:hover {
     box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
 }
 
-
-
-
-
+/* Estilos de los títulos de secciones */
 .title-cards,
 .title-form {
     color: #dee2ad;
@@ -95,12 +99,14 @@ text-align: center;
     margin: 3rem;
 }
 
+/* Estilos de las tarjetas de actividades y tecnologías */
 .cards {
     display: flex;
     justify-content: space-between;
     margin: 3rem;
 }
 
+/* Estilos de las tarjetas individuales */
 .card {
     background-color: #35374b;
     width: 50vh;
@@ -112,16 +118,19 @@ text-align: center;
     border: #93b39c solid 1px;
 }
 
+/* Efecto de escala al pasar el ratón sobre las tarjetas */
 .card:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
 }
 
+/* Estilos de las imágenes dentro de las tarjetas */
 .card img {
     width: 100%;
     height: 60%;
 }
 
+/* Estilos del texto dentro de las tarjetas */
 .card p {
     color: #fff;
     margin-bottom: 0;
@@ -131,6 +140,7 @@ text-align: center;
     padding: 1rem;
 }
 
+/* Estilos de los títulos dentro de las tarjetas */
 .card h3 {
     color: #93b39c;
     text-align: center;
@@ -139,6 +149,7 @@ text-align: center;
     letter-spacing: 0.2rem;
 }
 
+/* Estilos del contenedor del formulario */
 .container-form {
     margin: 1rem 25rem;
     padding: 20px;
@@ -148,15 +159,18 @@ text-align: center;
     background-color: #50727b;
 }
 
+/* Estilos del formulario */
 .form {
     padding: 1rem;
     text-align: center;
 }
 
+/* Estilos de los grupos de formularios */
 .form-group {
     margin-bottom: 20px;
 }
 
+/* Estilos de los campos de formulario */
 input[type="text"],
 input[type="url"],
 textarea {
@@ -167,10 +181,12 @@ textarea {
     box-sizing: border-box;
 }
 
+/* Estilos específicos para el textarea */
 textarea {
     resize: vertical;
 }
 
+/* Estilos del botón de formulario */
 button {
     outline: none;
     cursor: pointer;
@@ -190,16 +206,19 @@ button {
     color: #93b39c;
 }
 
+/* Estilos del texto dentro del botón */
 button span {
     position: relative;
     z-index: 10;
     transition: color 0.4s;
 }
 
+/* Estilos del texto dentro del botón al pasar el ratón */
 button:hover span {
     color: #35374b;
 }
 
+/* Estilos de los seudoelementos del botón */
 button::before,
 button::after {
     position: absolute;
@@ -210,6 +229,7 @@ button::after {
     z-index: 0;
 }
 
+/* Estilos del seudoelemento antes del botón */
 button::before {
     content: "";
     background: #35374b;
@@ -219,24 +239,26 @@ button::before {
     transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
 }
 
+/* Efecto de desplazamiento del seudoelemento antes del botón al pasar el ratón */
 button:hover::before {
     transform: translate3d(100%, 0, 0);
 }
 
-
-
+/* Estilos del contenedor de las tarjetas de tecnologías */
 .favorite-tec {
     display: flex;
     justify-content: center;
     gap: 3rem;
 }
 
+/* Estilos de las tarjetas de tecnologías */
 .card-tec {
     overflow: visible;
     width: 18rem;
     height: 25rem;
 }
 
+/* Estilos del contenido de las tarjetas de tecnologías */
 .content {
     width: 100%;
     height: 100%;
@@ -246,6 +268,7 @@ button:hover::before {
     border-radius: 5px;
 }
 
+/* Estilos del reverso de las tarjetas de tecnologías */
 .back {
     background-color: #50727b;
     position: absolute;
@@ -257,6 +280,7 @@ button:hover::before {
     overflow: hidden;
 }
 
+/* Estilos del anverso de las tarjetas de tecnologías */
 .front {
     background-color: #50727b;
     position: absolute;
@@ -266,6 +290,7 @@ button:hover::before {
     border-radius: 5px;
 }
 
+/* Estilos generales del contenido en el reverso de las tarjetas de tecnologías */
 .back {
     width: 100%;
     height: 100%;
@@ -275,6 +300,7 @@ button:hover::before {
     overflow: hidden;
 }
 
+/* Animación para la rotación del fondo en el reverso de las tarjetas de tecnologías */
 .back::before {
     position: absolute;
     content: ' ';
@@ -285,6 +311,7 @@ button:hover::before {
     animation: rotation_481 5000ms infinite linear;
 }
 
+/* Estilos del contenido en el reverso de las tarjetas de tecnologías */
 .back-content {
     position: absolute;
     width: 99%;
@@ -299,34 +326,39 @@ button:hover::before {
     gap: 2rem;
 }
 
+/* Estilos del texto fuerte en el reverso de las tarjetas de tecnologías */
 .back-content strong {
     color: #93b39c;
     letter-spacing: 0.3rem;
 }
 
+/* Estilos de la imagen en el reverso de las tarjetas de tecnologías */
 .back-content img {
     width: 80%;
 }
 
+/* Efecto de rotación al pasar el ratón sobre las tarjetas de tecnologías */
 .card-tec:hover .content {
     transform: rotateY(180deg);
 }
 
+/* Animación para la rotación del fondo en las tarjetas de tecnologías */
 @keyframes rotation_481 {
     0% {
         transform: rotateZ(0deg);
     }
-
     0% {
         transform: rotateZ(360deg);
     }
 }
 
+/* Estilos generales del anverso de las tarjetas de tecnologías */
 .front {
     transform: rotateY(180deg);
     color: white;
 }
 
+/* Estilos del contenido en el anverso de las tarjetas de tecnologías */
 .front-content {
     width: 100%;
     height: 100%;
@@ -340,6 +372,7 @@ button:hover::before {
     background-color: #50727b;
 }
 
+/* Estilos del texto de descripción en el anverso de las tarjetas de tecnologías */
 .description {
     font-size: large;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
