@@ -90,160 +90,6 @@ body {
     box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
 }
 
-/* Estilos de los títulos de secciones */
-.title-cards,
-.title-form {
-    color: #dee2ad;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 3rem;
-}
-
-/* Estilos de las tarjetas de actividades y tecnologías */
-.cards {
-    display: flex;
-    justify-content: space-between;
-    margin: 3rem;
-}
-
-/* Estilos de las tarjetas individuales */
-.card {
-    background-color: #35374b;
-    width: 50vh;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-    margin: 0.5rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
-    border: #93b39c solid 1px;
-}
-
-/* Efecto de escala al pasar el ratón sobre las tarjetas */
-.card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
-}
-
-/* Estilos de las imágenes dentro de las tarjetas */
-.card img {
-    width: 100%;
-    height: 60%;
-}
-
-/* Estilos del texto dentro de las tarjetas */
-.card p {
-    color: #fff;
-    margin-bottom: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-    font-size: medium;
-    padding: 1rem;
-}
-
-/* Estilos de los títulos dentro de las tarjetas */
-.card h3 {
-    color: #93b39c;
-    text-align: center;
-    padding: 1rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    letter-spacing: 0.2rem;
-}
-
-/* Estilos del contenedor del formulario */
-.container-form {
-    margin: 1rem 25rem;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #50727b;
-}
-
-/* Estilos del formulario */
-.form {
-    padding: 1rem;
-    text-align: center;
-}
-
-/* Estilos de los grupos de formularios */
-.form-group {
-    margin-bottom: 20px;
-}
-
-/* Estilos de los campos de formulario */
-input[type="text"],
-input[type="url"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-}
-
-/* Estilos específicos para el textarea */
-textarea {
-    resize: vertical;
-}
-
-/* Estilos del botón de formulario */
-button {
-    outline: none;
-    cursor: pointer;
-    border: none;
-    padding: 0.9rem 2rem;
-    margin: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: inherit;
-    position: relative;
-    display: inline-block;
-    letter-spacing: 0.05rem;
-    font-weight: 700;
-    font-size: 17px;
-    border-radius: 500px;
-    overflow: hidden;
-    background: #93b39c;
-    color: #93b39c;
-}
-
-/* Estilos del texto dentro del botón */
-button span {
-    position: relative;
-    z-index: 10;
-    transition: color 0.4s;
-}
-
-/* Estilos del texto dentro del botón al pasar el ratón */
-button:hover span {
-    color: #35374b;
-}
-
-/* Estilos de los seudoelementos del botón */
-button::before,
-button::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-}
-
-/* Estilos del seudoelemento antes del botón */
-button::before {
-    content: "";
-    background: #35374b;
-    width: 120%;
-    left: -10%;
-    transform: skew(30deg);
-    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
-}
-
-/* Efecto de desplazamiento del seudoelemento antes del botón al pasar el ratón */
-button:hover::before {
-    transform: translate3d(100%, 0, 0);
-}
-
 /* Estilos del contenedor de las tarjetas de tecnologías */
 .favorite-tec {
     display: flex;
@@ -379,4 +225,158 @@ button:hover::before {
     padding: 2rem;
     justify-content: center;
     line-height: 1.5;
+}
+
+/* Estilos del contenedor del formulario */
+.container-form {
+    margin: 1rem 25rem;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #50727b;
+}
+
+/* Estilos del formulario */
+.form {
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Estilos de los grupos de formularios */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Estilos de los campos de formulario */
+input[type="text"],
+input[type="url"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Estilos específicos para el textarea */
+textarea {
+    resize: vertical;
+}
+
+/* Estilos del botón de formulario */
+button {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.9rem 2rem;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: inherit;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 17px;
+    border-radius: 500px;
+    overflow: hidden;
+    background: #93b39c;
+    color: #93b39c;
+}
+
+/* Estilos del texto dentro del botón */
+button span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+}
+
+/* Estilos del texto dentro del botón al pasar el ratón */
+button:hover span {
+    color: #35374b;
+}
+
+/* Estilos de los seudoelementos del botón */
+button::before,
+button::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+/* Estilos del seudoelemento antes del botón */
+button::before {
+    content: "";
+    background: #35374b;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+/* Efecto de desplazamiento del seudoelemento antes del botón al pasar el ratón */
+button:hover::before {
+    transform: translate3d(100%, 0, 0);
+}
+
+/* Estilos de los títulos de secciones */
+.title-cards,
+.title-form {
+    color: #dee2ad;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 3rem;
+}
+
+/* Estilos de las tarjetas de actividades y tecnologías */
+.cards {
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem;
+}
+
+/* Estilos de las tarjetas individuales */
+.card {
+    background-color: #35374b;
+    width: 50vh;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    margin: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    border: #93b39c solid 1px;
+}
+
+/* Efecto de escala al pasar el ratón sobre las tarjetas */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+}
+
+/* Estilos de las imágenes dentro de las tarjetas */
+.card img {
+    width: 100%;
+    height: 60%;
+}
+
+/* Estilos del texto dentro de las tarjetas */
+.card p {
+    color: #fff;
+    margin-bottom: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: medium;
+    padding: 1rem;
+}
+
+/* Estilos de los títulos dentro de las tarjetas */
+.card h3 {
+    color: #93b39c;
+    text-align: center;
+    padding: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 0.2rem;
 }
