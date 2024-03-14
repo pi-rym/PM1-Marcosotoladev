@@ -13,8 +13,11 @@ class Activity {
     constructor() {
       this.activities = []; // Arreglo para almacenar las actividades
       this.idGenerator = 0; // Generador de identificadores únicos para las actividades
+
     }
   
+
+
     // Método para obtener todas las actividades almacenadas
     getAllActivities() {
       return this.activities;

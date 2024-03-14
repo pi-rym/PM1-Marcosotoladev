@@ -380,3 +380,7 @@ button:hover::before {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     letter-spacing: 0.2rem;
 }
+
+footer {
+    height: 10rem;
+}
