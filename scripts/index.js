@@ -43,8 +43,6 @@ class Repository {
 // Crear una instancia de Repository
 const repository = new Repository();
 
-
-
 // Función para convertir las actividades en elementos HTML y mostrarlas en la página
 function convertToElementsHTML() {
   const container = document.getElementById("container"); // Obtener el contenedor donde se mostrarán las actividades
@@ -123,27 +121,4 @@ document
   .getElementById("agregar-actividad-btn")
   .addEventListener("click", addActivity);
 
-module.exports = {Activity, Repository};
-
-/*   class ToDoList {
-    constructor () {
-        this.ToDoList = [];
-    };
-
-    getTodos() {
-        return this.ToDoList;
-    };
-
-    addTodo (todo) {
-        this.ToDoList.push(todo);
-    };
-
-deleteTodo () {
-    this.ToDoList.pop();
-};
-
-
-
-};
-
-Module.export = ToDoList; */
+module.exports = { Activity, Repository };
