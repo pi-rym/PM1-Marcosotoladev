@@ -30,11 +30,10 @@ class Repository {
   // Método para eliminar una actividad por su ID
   deleteActivity(id) {
     if (
-      window.confirm("¿Estás seguro de que quieres eliminar esta actividad?")      // Confirmar la eliminación con el usuario
+      window.confirm("¿Estás seguro de que quieres eliminar esta actividad?") // Confirmar la eliminación con el usuario
     ) {
-
-
-      this.activities = this.activities.filter( // Filtrar la lista de actividades para excluir la actividad con el ID proporcionado
+      this.activities = this.activities.filter(
+        // Filtrar la lista de actividades para excluir la actividad con el ID proporcionado
         (activity) => activity.id !== id
       );
     }
@@ -45,11 +44,11 @@ class Repository {
 const repository = new Repository();
 
 
+
 // Función para convertir las actividades en elementos HTML y mostrarlas en la página
 function convertToElementsHTML() {
   const container = document.getElementById("container"); // Obtener el contenedor donde se mostrarán las actividades
   container.innerHTML = ""; // Limpiar el contenido actual del contenedor
-
 
   const activities = repository.getAllActivities(); // Obtener todas las actividades del repositorio
 
@@ -97,7 +96,7 @@ function convertToElementHTML(activityInstance) {
 // Función para agregar una nueva actividad desde un formulario
 function addActivity(event) {
   event.preventDefault(); // Evitar el comportamiento predeterminado del formulario
-  
+
   // Obtener los valores del formulario
   const inputTitle = document.getElementById("title").value;
   const inputDescription = document.getElementById("description").value;
@@ -123,3 +122,28 @@ function addActivity(event) {
 document
   .getElementById("agregar-actividad-btn")
   .addEventListener("click", addActivity);
+
+module.exports = {Activity, Repository};
+
+/*   class ToDoList {
+    constructor () {
+        this.ToDoList = [];
+    };
+
+    getTodos() {
+        return this.ToDoList;
+    };
+
+    addTodo (todo) {
+        this.ToDoList.push(todo);
+    };
+
+deleteTodo () {
+    this.ToDoList.pop();
+};
+
+
+
+};
+
+Module.export = ToDoList; */
