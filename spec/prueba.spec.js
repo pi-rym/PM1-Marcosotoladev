@@ -1,4 +1,4 @@
-
+// Activity sea una clase
 // Repository sea una clase
 // Deberia ser una instancia de la clase Repository
 // Deberia tener metodo getAllActivities.
